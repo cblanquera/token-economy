@@ -1,0 +1,132 @@
+.section-1 {
+  margin-top: 100px;
+}
+
+.section-1 .disconnected {
+  text-align: center;
+}
+
+.section-1 .tabs {
+  font-size: 12px;;
+  margin: auto;
+  max-width: 400px;
+}
+
+.section-1 .tabs .btn {
+  border-radius: 10px;
+}
+
+.section-1 .form {
+  align-items: flex-end;
+  border-radius: 10px;
+  display: flex;
+  overflow: hidden;
+}
+
+.section-1 .form .preview img {
+  display: block;
+}
+
+.section-1 .form .label {
+  color: #000000;
+}
+
+.section-1 .info {
+  flex-grow: 1;
+  padding: 20px 20px 20px 0;
+  text-align: center;
+}
+
+.section-1 .info h1 {
+  color: #000000;
+  font-size: 20px;
+  margin: 0;
+}
+
+.section-1 .form-exchange {
+  color: #EFEFEF;
+  margin: 20px auto 0;
+  max-width: 400px;
+}
+
+.section-1 .form-exchange .btn {
+  border-radius: 10px;
+}
+
+.section-1 .form-exchange .form-row {
+  background-color: #161522;
+  border: 1px solid #2A2F42;
+  border-radius: 10px;
+  margin: 0 0 20px;
+  padding: 10px;
+  text-align: left;
+}
+
+.section-1 .form-exchange .form-row label {
+  align-items: center;
+  display: flex;
+}
+
+.section-1 .form-exchange .form-row label span {
+  flex-grow: 1;
+}
+
+.section-1 .form-exchange .form-row label .cta-watch {
+  color: #FFFFFF;
+  font-size: 12px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.section-1 .form-exchange .form-row label img {
+  margin-right: 10px;
+  width: 20px;
+}
+
+.section-1 .form-exchange .form-row .form-field {
+  align-items: center;
+  display: flex;
+}
+
+.section-1 .form-exchange .form-row .form-field input {
+  background-color: transparent;
+  border: 0;
+  color: #CCCCCC;
+  flex-grow: 1;
+  font-size: 20px;
+  outline: none;
+}
+
+.section-1 .form-exchange .form-row .form-field .balance {
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.section-1 .contract {
+  font-size: 12px;
+  margin-top: 10px;
+  text-align: center;
+}
+
+@media(max-width: 767px) {
+  .section-1 {
+    margin-top: 40px;
+  }
+
+  .section-1 .info {
+    padding-right: 0;
+  }
+
+  .section-1 .form {
+    display: block;
+    padding: 20px 20px 40px;
+  }
+
+  .section-1 .form .preview {
+    text-align: center;
+  }
+
+  .section-1 .form .preview img {
+    display: inline;
+  }
+}

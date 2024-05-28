@@ -1,0 +1,119 @@
+.section-1 {
+  padding: 100px 0;
+}
+
+.section-1 .disconnected {
+  text-align: center;
+}
+
+.section-1 .box {
+  background-color: #232323;
+  border: 4px solid #999999;
+  border-radius: 10px;
+  color: #EFEFEF;
+  margin: auto;
+  max-width: 600px;
+  padding: 20px;
+}
+
+.section-1 .box a {
+  color: #FFFFFF;
+  font-size: 12px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.section-1 .box .watch {
+  float: right;
+  margin-top: 20px;
+}
+
+.section-1 h1 {
+  margin: 0;
+  padding: 10px 0;
+}
+
+.section-1 .progress {
+  margin: 20px 0;
+}
+
+.section-1 .progress .meter {
+  background-color: #CCCCCC;
+  border-radius: 20px;
+  height: 25px;
+}
+
+.section-1 .progress .meter div {
+  background-color: #1062EE;
+  border-radius: 20px;
+  height: 100%;
+}
+
+.section-1 .progress .labels {
+  display: flex;
+  font-size: 11px;
+  padding: 5px 10px;
+}
+
+.section-1 .progress .labels .right {
+  flex-grow: 1;
+  text-align: right;
+}
+
+.section-1 .stats {
+  display: flex;
+}
+
+.section-1 .stats .stat {
+  border: 1px solid #FFFFFF;
+  padding: 20px 20px 30px;
+  text-align: center;
+  width: calc(50% - 40px);
+}
+
+.section-1 .stats .stat:first-child {
+  border-right: 0;
+}
+
+.section-1 .stats .stat h3 {
+  font-size: 11px;
+  margin: 0;
+  text-transform: uppercase;
+}
+
+.section-1 .stats .stat span {
+  font-size: 30px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.section-1 .form .form-row {
+  margin: 20px 0;
+}
+
+.section-1 .form .form-row > label {
+  color: #FFFFFF;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.section-1 .form .form-inline {
+  align-items: center;
+  display: flex;
+  margin-top: 10px;
+}
+
+.section-1 .form .form-inline .form-control {
+  flex-grow: 1;
+  width: auto;
+}
+
+.section-1 .form .btn {
+  padding: 12px 24px;
+}
+
+.section-1 .form .calculations {
+  display: block;
+  padding: 0 10px;
+  white-space: nowrap;
+}

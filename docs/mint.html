@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <title>Mint</title>
+    <meta name="description" content="Mint a token." />
+    <meta property="og:title" content="Mint" />
+    <meta property="og:description" content="Mint a token." />
+    <meta property="og:image" content="/images/banner.png" />
+    <meta property="og:url" content="https://www.token.com/" />
+    <meta property="og:type" content="website" />
+
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:site" content="@token" />
+    <meta name="twitter:title" content="Mint" />
+    <meta name="twitter:description" content="Mint a token." />
+    <meta name="twitter:image" content="/images/banner.png" />
+
+    <link rel="shortcut icon" href="/images/favicon.png" type="image/png" />
+    <link rel="icon" href="/images/favicon.png" type="image/png" />
+
+    <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+
+    <link rel="stylesheet" type="text/css" href="/styles/theme.css?v1" />
+    <link rel="stylesheet" type="text/css" href="/styles/mint.css?v1" />
+  </head>
+  <body>
+    <header class="head">
+      <div class="container">
+        <nav class="left">
+          <a class="logo" href="#">
+            <img src="/images/logo.png" />
+          </a>
+        </nav>
+        <nav class="right">
+          <a class="link" href="./mint.html">Mint</a>
+          <a class="link" href="./buy.html">Swap</a>
+          <a class="link" href="./vesting.html">Vesting</a>
+          <a class="link" href="./treasury.html">Treasury</a>
+          <div class="disconnected">
+            <a 
+              class="link btn btn-outline btn-secondary" 
+              data-do="connect"
+              data-on="click"
+              href="javascript:void(0)"
+            >
+              Connect Wallet
+            </a>
+          </div>
+          <div class="connected hide">
+            <a 
+              class="link btn btn-outline btn-secondary" 
+              data-do="disconnect"
+              data-on="click"
+              href="javascript:void(0)"
+            >
+              <span class="btn-address"></span>
+              <i class="fas fa-right-from-bracket"></i>
+            </a>
+          </div>
+          <div class="social">
+            <a class="link" href="#" target="_blank">
+              <i class="fab fa-twitter"></i>
+            </a>
+            <a class="link" href="#" target="_blank">
+              <i class="fab fa-discord"></i>
+            </a>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <main class="body">
+      <section class="section section-1">
+        <div class="container">
+          <div class="disconnected">
+            <a 
+              class="link btn btn-large btn-outline btn-secondary" 
+              data-do="connect"
+              data-on="click"
+              href="javascript:void(0)"
+            >
+              Connect Wallet
+            </a>
+          </div>
+          <div class="connected hide">
+            <div class="box">
+              <a 
+                class="watch" 
+                href="javascript:void(0" 
+                data-do="watch" 
+                data-on="click"
+              >Watch</a>
+              <h1>Mint Tokens</h1>
+              <div class="progress">
+                <div class="meter"><div id="progress"></div></div>
+                <div class="labels">
+                  <div id="current-allocation" class="left"></div>
+                  <div id="max-allocation" class="right"></div>
+                </div>
+              </div>
+              <form class="form" data-do="buy" data-on="submit">
+                <div class="form-row">
+                  <div class="stats">
+                    <div class="stat">
+                      <h3>Price per Token</h3>
+                      <span id="unit-price"></span>
+                    </div>
+                    <div class="stat">
+                      <h3>Fully Vested Date</h3>
+                      <span id="vested-date"></span>
+                    </div>
+                  </div>
+                </div>
+                <div class="form-row">
+                  <label>Enter Token Amount</label>
+                  <div class="form-input form-inline">
+                    <input 
+                      id="amount" 
+                      type="number" 
+                      class="form-control" 
+                      max="5000" 
+                      min="10" 
+                      step="1" 
+                      value="1000"
+                      data-do="calculate"
+                      data-on="keyup"
+                    />
+                    <button class="btn btn-solid btn-secondary">
+                      Mint
+                    </button>
+                    <strong class="calculations"> = <span id="conversion"></span></strong>
+                  </div>
+                </div>
+              </form>
+
+              <a 
+                href="https://goerli.etherscan.io/address/0x270c821157D4660F95AEb8C86Cf48B2D172EF5a7" 
+                target="_blank"
+              >Token Contract 0x270c821157D4660F95AEb8C86Cf48B2D172EF5a7</a>
+              <br /><br />
+              <a 
+                href="https://goerli.etherscan.io/address/0x26dfdC312C6565B18581ABcBF4aeb422047D6584" 
+                target="_blank"
+              >Sale Contract&nbsp;&nbsp;&nbsp; 0x26dfdC312C6565B18581ABcBF4aeb422047D6584</a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="foot"></footer>
+    <script id="network" data-value="testnet"></script>
+    <script type="text/javascript" src="/scripts/lib/doon.js"></script>
+    <script type="text/javascript" src="/scripts/lib/theme.js"></script>
+    <script type="text/javascript" src="/scripts/lib/web3.js"></script>
+    <script type="text/javascript" src="/scripts/lib/web3modal.js"></script>
+    <script type="text/javascript" src="/scripts/lib/web3sdk.js"></script>
+    <script type="text/javascript" src="/scripts/lib/walletconnect.js"></script>
+    <script type="text/javascript" src="/scripts/lib/fortmatic.js"></script>
+    <script type="text/javascript" src="/scripts/lib/notify.js"></script>
+    <script type="text/javascript" src="/scripts/mint.js?v2"></script>
+    <script type="text/javascript" src="/scripts/connect.js?v2"></script>
+  </body>
+</html>

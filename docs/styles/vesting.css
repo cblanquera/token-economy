@@ -1,0 +1,62 @@
+.section-1 {
+  padding: 50px 0;
+}
+
+.section-1 .disconnected {
+  text-align: center;
+}
+
+.section-1 .box {
+  background-color: #232323;
+  border: 4px solid #999999;
+  border-radius: 10px;
+  color: #EFEFEF;
+  margin: 0 0 20px;
+  padding: 20px 20px 40px;
+}
+
+.section-1 .box a {
+  color: #FFFFFF;
+  font-size: 12px;
+  text-decoration: none;
+}
+
+.section-1 .progress {
+  margin: 20px 0;
+}
+
+.section-1 .progress .meter {
+  background-color: #CCCCCC;
+  border-radius: 20px;
+  height: 25px;
+}
+
+.section-1 .progress .meter div {
+  background-color: #1062EE;
+  border-radius: 20px;
+  height: 100%;
+}
+
+.section-1 .progress .labels {
+  display: flex;
+  font-size: 11px;
+  padding: 5px 10px;
+}
+
+.section-1 .progress .labels .right {
+  flex-grow: 1;
+  text-align: right;
+}
+
+.section-1 .btn {
+  display: none;
+  margin-top: 10px;
+}
+
+.section-1 .questions > div {
+  margin-bottom: 60px;
+}
+
+.foot::before {
+  box-shadow: 0 -10px 60px #000000;
+}

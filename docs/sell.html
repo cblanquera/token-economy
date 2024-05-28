@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <title>Swap</title>
+    <meta name="description" content="Swap a token." />
+    <meta property="og:title" content="Swap" />
+    <meta property="og:description" content="Swap a token." />
+    <meta property="og:image" content="/images/banner.png" />
+    <meta property="og:url" content="https://www.token.com/sell.html" />
+    <meta property="og:type" content="website" />
+
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:site" content="@token" />
+    <meta name="twitter:title" content="Swap" />
+    <meta name="twitter:description" content="Swap a token." />
+    <meta name="twitter:image" content="/images/banner.png" />
+
+    <link rel="shortcut icon" href="/images/favicon.png" type="image/png" />
+    <link rel="icon" href="/images/favicon.png" type="image/png" />
+
+    <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+
+    <link rel="stylesheet" type="text/css" href="/styles/theme.css?v1" />
+    <link rel="stylesheet" type="text/css" href="/styles/swap.css?v1" />
+  </head>
+  <body>
+    <header class="head">
+      <div class="container">
+        <nav class="left">
+          <a class="logo" href="#">
+            <img src="/images/logo.png" />
+          </a>
+        </nav>
+        <nav class="right">
+          <a class="link" href="./mint.html">Mint</a>
+          <a class="link" href="./buy.html">Swap</a>
+          <a class="link" href="./vesting.html">Vesting</a>
+          <a class="link" href="./treasury.html">Treasury</a>
+          <div class="disconnected">
+            <a 
+              class="link btn btn-outline btn-secondary" 
+              data-do="connect"
+              data-on="click"
+              href="javascript:void(0)"
+            >
+              Connect Wallet
+            </a>
+          </div>
+          <div class="connected hide">
+            <a 
+              class="link btn btn-outline btn-secondary" 
+              data-do="disconnect"
+              data-on="click"
+              href="javascript:void(0)"
+            >
+              <span class="btn-address"></span>
+              <i class="fas fa-right-from-bracket"></i>
+            </a>
+          </div>
+          <div class="social">
+            <a class="link" href="#" target="_blank">
+              <i class="fab fa-twitter"></i>
+            </a>
+            <a class="link" href="#" target="_blank">
+              <i class="fab fa-discord"></i>
+            </a>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <main class="body">
+      <section class="section section-1">
+        <div class="container">
+          <div class="disconnected">
+            <a 
+              class="link btn btn-large btn-outline btn-secondary" 
+              data-do="connect"
+              data-on="click"
+              href="javascript:void(0)"
+            >
+              Connect Wallet
+            </a>
+          </div>
+          <div class="connected hide">
+            <div class="tabs">
+              <a 
+                class="btn btn-solid btn-large btn-disabled"
+                href="/buy.html"
+              >
+                Buy $TOKEN
+              </a>
+              <a 
+                class="btn btn-solid btn-large btn-primary"
+                href="/sell.html"
+              >
+                Sell $TOKEN
+              </a>
+            </div>
+            <div class="form-exchange">
+              <div class="form-row">
+                <label>
+                  <img src="/images/crypto/token.png" />
+                  <span>$TOKEN</span>
+                  <a 
+                    class="cta-watch"
+                    data-crypto="token"
+                    data-do="watch"
+                    data-on="click"
+                    href="javascript:void(0)"
+                  >
+                    Watch
+                  </a>
+                </label>
+                <div class="form-field">
+                  <input 
+                    class="form-control" 
+                    data-do="convert"
+                    data-on="keyup"
+                    id="token" 
+                    type="number" 
+                    min="0" 
+                    step="0.000001" 
+                    placeholder="0.00" 
+                  />
+                  <div class="balance balance-token"></div>
+                </div>
+              </div>
+              <div class="form-row">
+                <label>
+                  <img src="/images/crypto/eth.png" />
+                  <span>ETH</span>
+                </label>
+                <div class="form-field">
+                  <input disabled="disabled" class="form-control" id="eth" type="number" placeholder="0.00" />
+                  <div class="balance balance-eth"></div>
+                </div>
+              </div>
+              <a 
+                class="btn btn-block btn-solid btn-large btn-secondary"
+                data-do="sell"
+                data-on="click"
+                href="javascript:void(0)"
+              >
+                Sell $TOKEN
+              </a>
+            </div>
+            <div class="contract">
+              <a 
+                href="https://goerli.etherscan.io/address/0x9175a38e6390f3aC1257dab652DCd96A981c1ce2" 
+                target="_blank"
+              >0x9175a38e6390f3aC1257dab652DCd96A981c1ce2</a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="foot"></footer>
+    <script id="network" data-value="testnet"></script>
+    <script type="text/javascript" src="/scripts/lib/doon.js"></script>
+    <script type="text/javascript" src="/scripts/lib/theme.js"></script>
+    <script type="text/javascript" src="/scripts/lib/web3.js"></script>
+    <script type="text/javascript" src="/scripts/lib/web3modal.js"></script>
+    <script type="text/javascript" src="/scripts/lib/web3sdk.js"></script>
+    <script type="text/javascript" src="/scripts/lib/walletconnect.js"></script>
+    <script type="text/javascript" src="/scripts/lib/fortmatic.js"></script>
+    <script type="text/javascript" src="/scripts/lib/notify.js"></script>
+    <script type="text/javascript" src="/scripts/sell.js?v1"></script>
+    <script type="text/javascript" src="/scripts/connect.js?v1"></script>
+  </body>
+</html>
