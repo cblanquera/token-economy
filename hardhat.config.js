@@ -35,14 +35,13 @@ module.exports = {
       url: 'https://goerli.infura.io/v3/2a7154bb1cf244d9a412d1925398058c',
       chainId: 5,
       scanner: 'https://goerli.etherscan.io',
-      opensea: 'https://testnets.opensea.io',
       accounts: [process.env.BLOCKCHAIN_GOERLI_PRIVATE_KEY],
       contracts: {
-        token: '0x270c821157D4660F95AEb8C86Cf48B2D172EF5a7',
-        vesting: '0x26801e735A271664491B5FAd156e58E1A7148BB9',
-        sale: '0x26dfdC312C6565B18581ABcBF4aeb422047D6584',
-        treasury: '0x45Ca851f07813F81b7938e891eC0F180b1391350',
-        swap: '0x9175a38e6390f3aC1257dab652DCd96A981c1ce2'
+        token: '',
+        vesting: '',
+        sale: '',
+        treasury: '',
+        swap: ''
       }
     },
     ethereum: {
