@@ -48,7 +48,6 @@ module.exports = {
       url: 'https://mainnet.infura.io/v3/9aa3d95b3bc440fa88ea12eaa4456161',
       chainId: 1,
       scanner: 'https://etherscan.io',
-      opensea: 'https://opensea.io',
       accounts: [process.env.BLOCKCHAIN_ETHEREUM_PRIVATE_KEY],
       contracts: {}
     },
